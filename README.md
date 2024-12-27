@@ -102,7 +102,7 @@ http://localhost:5000
 pip install -r requirements.txt
 ```
 <img src="MD/Project Overview.jpg" alt="Project Overview" width="100%"/>
-<img src="MD/Project pipline .jpg" alt="Project pipline " width="100%"/>
+
 
 
 
