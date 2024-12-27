@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git(
-                    url: 'https://github.com/Eng-Mohamed-Emad/Final_Task_CI_pipeline_Docker_Ansible.git',
+                    url: 'https://github.com/RayanElsharkawy/Project-CI-pipeline-Docker-Ansible.git',
                     credentialsId: 'github-credentials',
                     branch: 'main'
                 )
@@ -26,7 +26,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'mypass', usernameVariable: 'myuser')]) {
                     sh """
                         docker login -u ${myuser} -p ${mypass}
-                        docker run -d -p 5000:5000 --name my-app-container mohamedemadeldin101/my-weather-app-image
+                        docker run -d -p 5000:5000 --name rayanelsharkawy/python-app  rayanelsharkawy/python-app:V01
                     """
                 }
             }
