@@ -3,7 +3,7 @@
   hosts: all
   become: yes
   vars:
-    docker_image: "mohamedemadeldin101/my-weather-app-image"
+    docker_image: "rayanelsharkawy/python-app:V01"
     ubuntu_release_codename: "focal" # Adjust this for the correct Ubuntu version
   tasks:
     - name: Update the apt package index
